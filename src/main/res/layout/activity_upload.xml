@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_upload"
+    tools:context=".UploadActivity"
+    android:background="@drawable/bg_1">
+
+    <ImageView
+        android:id="@+id/image_photo"
+        android:src="@drawable/capture"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="10sp">
+    </ImageView>
+
+    <Button
+        android:id="@+id/camera_button"
+        android:background="@drawable/button"
+        android:drawableStart="@android:drawable/ic_menu_camera"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="Take a Picture"
+        android:fontFamily="casual"
+        android:layout_gravity="center"
+        android:textColor="#eaeaea"
+        android:textStyle="bold">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filipino word:"
+            android:fontFamily="casual"
+            android:textColor="#dce957"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_filipinoWord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type a word..."
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English word:"
+            android:fontFamily="casual"
+            android:textSize="28sp"
+            android:textColor="#dce957"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_englishWord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a word..."
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/save_button"
+            android:background="@drawable/savebutton"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="@string/save_button"
+            android:fontFamily="casual"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+        </Button>
+        <Button
+            android:id="@+id/cancel_button"
+            android:background="@drawable/cancelbutton"
+            android:drawableStart="@android:drawable/ic_delete"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="@string/cancel_button"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/save_button"
+            android:layout_marginStart="11dp">
+        </Button>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

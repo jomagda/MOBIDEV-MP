@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6249"
+        android:id="@+id/rl">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:src="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_upload"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:src="@drawable/edit"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/iv_upload"
+            android:layout_marginTop="80dp" />
+
+        <ImageView
+            android:id="@+id/iv_flashcards"
+            android:src="@drawable/flashcards"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:layout_below="@+id/iv_upload"
+            android:layout_alignStart="@+id/iv_upload" />
+
+        <ImageView
+            android:id="@+id/iv_stack"
+            android:src="@drawable/stack"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:layout_below="@+id/iv_edit"
+            android:layout_toStartOf="@+id/iv_flashcards"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_quiz"
+            android:src="@drawable/quiz"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/iv_flashcards" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

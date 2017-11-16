@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ang Taas App</string>
+
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+
+    <string name="section_format">Flashcard # %1$d</string>
+</resources>

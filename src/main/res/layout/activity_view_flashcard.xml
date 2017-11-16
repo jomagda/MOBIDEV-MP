@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Flashcard"
+    android:background="@drawable/bg_1">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/fc_image"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/iv_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chicken1600"
+            android:background="@drawable/flashcard_img"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fc_tagalog"
+        android:layout_below="@id/fc_image">
+
+        <TextView
+            android:id="@+id/tv_tagalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Manok"
+            android:textSize="100sp"
+            android:background="@color/fcTagalogColor"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fc_english"
+        android:layout_below="@+id/fc_tagalog">
+
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Chicken"
+            android:textSize="30sp"
+            android:background="@color/fcEnglishColor"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

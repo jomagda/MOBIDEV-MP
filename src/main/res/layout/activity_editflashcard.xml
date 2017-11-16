@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_editflashcard"
+    tools:context=".EditFlashcardActivity"
+    android:background="@drawable/bg_1">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/fc_image"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/iv_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chicken1600"
+            android:background="@drawable/flashcard_img"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fc_tagalog"
+        android:layout_below="@id/fc_image">
+
+        <EditText
+            android:id="@+id/et_tagalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hoshi"
+            android:fontFamily="casual"
+            android:textSize="80sp"
+            android:background="@color/fcTagalogColor"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fc_english">
+
+        <EditText
+            android:id="@+id/et_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10 Inches"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:background="@color/fcEnglishColor"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <Button
+            android:id="@+id/save_button"
+            android:background="@drawable/savebutton"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="@string/save_button"
+            android:fontFamily="casual"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+        </Button>
+        <Button
+            android:id="@+id/cancel_button"
+            android:background="@drawable/cancelbutton"
+            android:drawableStart="@android:drawable/ic_delete"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="@string/cancel_button"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/save_button"
+            android:layout_marginStart="11dp">
+        </Button>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

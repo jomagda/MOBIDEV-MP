@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#be3406</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#343bba</color>
+
+    <color name="fcTagalogColor">#FF02</color>
+    <color name="fcEnglishColor">#FF4082</color>
+
+    <color name="button1">#737272</color>
+    <color name="button2">#565656</color>
+    <color name="saveButton1">#1b8626</color>
+    <color name="saveButton2">#0a5912</color>
+    <color name="cancelButton1">#ac2022</color>
+    <color name="cancelButton2">#760505</color>
+    <color name="addButton1">#1319ba</color>
+    <color name="addButton2">#0c0f70</color>
+
+</resources>
